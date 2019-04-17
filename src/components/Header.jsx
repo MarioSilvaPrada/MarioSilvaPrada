@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import { BLUE, YELLOW } from '../styles/styles';
 
 import NavBar from './NavBar';
 
 const StyledHeader = styled.div`
     height: 80px;
     width: 100%
-    display:flex;
-    flex-direction: flex-end;
-    background-color: #49beb7
+    display: flex;
+    justify-content: flex-end;
+    background-color: ${BLUE};
 
 
 `
