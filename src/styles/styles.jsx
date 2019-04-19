@@ -2,6 +2,8 @@
 export const FONT_FAMILY = `font-family: 'Lato', sans-serif;`;
 
 // Colors
-export const YELLOW = '#facf5a';
+export const white = (opacity = 1) => `rgba(208, 208, 208, ${opacity})`;
 
-export const BLUE = '#49beb7';
+export const RED = '#ff5959';
+
+export const BLUE = '#085f63';
