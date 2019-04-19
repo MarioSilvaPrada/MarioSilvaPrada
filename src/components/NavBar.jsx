@@ -19,7 +19,7 @@ const Link = styled.a`
     color: white;
 
 
-    &:hover{
+    :hover{
         cursor: pointer;
         background: ${RED}
     }

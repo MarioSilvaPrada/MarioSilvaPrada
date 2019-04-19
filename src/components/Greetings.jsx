@@ -4,6 +4,7 @@ import Typed from 'react-typed';
 import img from '../img/laptop.jpg';
 
 import { white, RED } from '../styles/styles';
+import StyledButton from './button/button'
 
 const Wrapper = styled.div`
     background-image: url(${img});
@@ -17,10 +18,12 @@ const ColorLayer = styled.div`
     width: 100%;
     display:flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     font-size: 4em;
     font-weight: bold;
-    color: ${RED}
+    color: ${RED};
+    
 `
 
 const Greetings = () => (
@@ -28,14 +31,14 @@ const Greetings = () => (
         <ColorLayer>
             <Typed
                 strings={[
-                    'Hi my name is Mário Prada',
-                    'and I\'m a Front-end Developer',
-                    'I invite you to check out my work'
+                    `Hi my name is Mário Prada.`,
+                    `I'm a Front-end Developer.`
                 ]}
                 typeSpeed={40}
                 backSpeed={30}
                 loop
             />
+            <StyledButton red>Check my work</StyledButton>
         </ColorLayer>
     </Wrapper>
 )

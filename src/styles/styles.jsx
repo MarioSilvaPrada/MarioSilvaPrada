@@ -6,4 +6,9 @@ export const white = (opacity = 1) => `rgba(208, 208, 208, ${opacity})`;
 
 export const RED = '#ff5959';
 
+export const DARK_RED = '#FF2525';
+
 export const BLUE = '#085f63';
+
+export const BOX_SHADOW =
+  'box-shadow: 0 -2px 24px 0 rgba(0, 0, 0, 0.24), 0 2px 24px 0 rgba(0, 0, 0, 0.12);'
