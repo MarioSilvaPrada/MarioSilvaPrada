@@ -12,7 +12,7 @@ const StyledTitle = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: ${white()};
+    color: ${white(1)};
     margin-bottom: 50px;
 
     h1 {

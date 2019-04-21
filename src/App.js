@@ -3,7 +3,9 @@ import './App.css';
 
 import Header from './components/Header';
 import Greetings from './components/Greetings';
-import AboutMe from './components/AboutMe';
+import AboutMe from './components/AboutMe/AboutMe';
+import Portfolio from './components/Portfolio';
+import Education from './components/Education';
 
 class App extends Component {
   render() {
@@ -12,6 +14,8 @@ class App extends Component {
         <Header/>
         <Greetings/>
         <AboutMe/>
+        <Portfolio/>
+        <Education/>
       </div>
     );
   }
