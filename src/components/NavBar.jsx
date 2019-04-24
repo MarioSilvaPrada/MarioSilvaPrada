@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { RED } from '../styles/styles';
+import { Link } from 'react-scroll'
 
 
 const StyledNavBar = styled.div`
@@ -9,28 +10,40 @@ const StyledNavBar = styled.div`
     align-items: stretch;
     width: 500px;
     margin-right: 30px;
-`
 
-const Link = styled.a`
-    font-weight: bold;
-    transition: 0.5s;
-    padding: 1.9rem 2.1rem;
-    text-decoration: none;
-    color: white;
+    .navbar_item {
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.5s;
+        padding: 1.9rem 2.1rem;
+        color: white;
+    }
 
-
-    :hover{
+    .navbar_item:hover {
         cursor: pointer;
         background: ${RED}
     }
 `
 
+
 const NavBar = () => (
     <StyledNavBar>
-        <Link>About</Link>
-        <Link>Portfolio</Link>
-        <Link>Education</Link>
-        <Link>Contact</Link>
+        <Link className="navbar_item" href="#about" activeClass="active" to="about" spy={true} smooth={true} duration={700}>
+            About
+        </Link>
+
+        <Link className="navbar_item" href="#portfolio" activeClass="active" to="portfolio" spy={true} smooth={true} duration={700}>
+            Portfolio
+        </Link>
+
+        <Link className="navbar_item" href="#education" activeClass="active" to="education" spy={true} smooth={true} duration={700}>
+            Education
+        </Link>
+
+        <Link className="navbar_item" href="#contact" activeClass="active" to="contact" spy={true} smooth={true} duration={700}>
+            Contact
+        </Link>
+
     </StyledNavBar>
 );
 

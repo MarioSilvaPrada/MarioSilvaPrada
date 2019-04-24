@@ -10,6 +10,10 @@ import design from '../../img/sketch.png';
 import responsive from '../../img/responsive.png';
 import foto from '../../img/foto.jpg';
 
+import { Element } from 'react-scroll'
+
+
+
 const StyledAboutMe = styled.div`
     display: flex;
     justify-content: space-evenly;
@@ -60,7 +64,10 @@ const StyledAboutMe = styled.div`
 
 const AboutMe = () => (
     <div>
-        <Title title={'About Me'} description={'Always excited to learn, design and build new things.'} />
+        <Element name="about"  className="element">
+            <Title  title={'About Me'} description={'Always excited to learn, design and build new things.'} />
+        </Element>
+
         <StyledAboutMe>
             <div className='aside'>
                 <img className='profile_foto' alt='foto' src={foto} />
@@ -70,31 +77,31 @@ const AboutMe = () => (
             <div className='contents'>
                 <div className='content'>
                     <TiltImage alt='code' src={code} />
-                    <TextContent 
+                    <TextContent
                         title='Code'
                         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed'
                     />
                 </div>
                 <div className='content'>
-                    <TextContent 
+                    <TextContent
                         title='Design'
                         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed'
                     />
                     <TiltImage alt='design' src={design} />
                 </div>
-                
+
                 <div className='content'>
                     <TiltImage alt='responsive' src={responsive} />
-                    <TextContent 
+                    <TextContent
                         title='Responsive'
                         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed'
                     />
                 </div>
-                
+
             </div>
         </StyledAboutMe>
-
     </div>
+
 );
 
 export default AboutMe;

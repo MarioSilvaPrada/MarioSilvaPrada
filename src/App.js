@@ -7,15 +7,17 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Portfolio from './components/Portfolio';
 import Education from './components/Education';
 
+
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
-        <Greetings/>
-        <AboutMe/>
-        <Portfolio/>
-        <Education/>
+        <Header />
+        <Greetings />
+        <AboutMe />
+        <Portfolio />
+        <Education />
       </div>
     );
   }
