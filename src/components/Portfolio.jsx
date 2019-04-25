@@ -55,8 +55,6 @@ const StyledPortfolio = styled.div`
     .my-work {
         display: flex;
         flex-wrap:wrap;
-        ${'' /* width: 90%;
-        margin: 0 auto; */}
         justify-content: space-evenly;
     }
 
