@@ -36,8 +36,8 @@ const NavBar = () => (
             Portfolio
         </Link>
 
-        <Link className="navbar_item" href="#education" activeClass="active" to="education" spy={true} smooth={true} duration={700}>
-            Education
+        <Link className="navbar_item" href="#technologies" activeClass="active" to="technologies" spy={true} smooth={true} duration={700}>
+            Technologies
         </Link>
 
         <Link className="navbar_item" href="#contact" activeClass="active" to="contact" spy={true} smooth={true} duration={700}>

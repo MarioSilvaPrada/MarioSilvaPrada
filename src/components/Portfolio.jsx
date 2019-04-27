@@ -86,7 +86,7 @@ const StyledPortfolio = styled.div`
 
     .project i {
         font-size: 1.2rem;
-        margin-left: 8px;
+        margin-left: 5px;
     }
 
     .project .github {

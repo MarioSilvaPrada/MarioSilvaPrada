@@ -65,7 +65,7 @@ const StyledAboutMe = styled.div`
 const AboutMe = () => (
     <div>
         <Element name="about"  className="element">
-            <Title  title={'About Me'} description={'Always excited to learn, design and build new things.'} />
+            <Title  id='about' title={'About Me'} description={'Always excited to learn, design and build new things.'} />
         </Element>
 
         <StyledAboutMe>

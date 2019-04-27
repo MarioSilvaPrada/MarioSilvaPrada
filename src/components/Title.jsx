@@ -26,7 +26,7 @@ const StyledTitle = styled.div`
 `;
 
 const Title = (props) => (
-    <StyledTitle>
+    <StyledTitle id={props.id}>
         <h1>{props.title}</h1>
         <p>{props.description}</p>
     </StyledTitle>
