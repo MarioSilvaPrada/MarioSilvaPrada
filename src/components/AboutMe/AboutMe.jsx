@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 import Title from '../Title';
-
-import foto from '../../img/foto.jpg';
 
 import { Element } from 'react-scroll';
 
 import ImageTec from '../ImageTec'
 
+// Profile pic
+import foto from '../../img/foto.jpg';
+
+// PNGs
 import express from '../../img/techs/express.png';
 import graphql from '../../img/techs/graphql.png';
 import jest from '../../img/techs/jest.png';
@@ -32,40 +33,33 @@ import styledComponents from '../../img/techs/styled-components.png';
 
 const StyledAboutMe = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 
     .aside {
-        flex:1;
+        display: flex;
     }
 
-    .contents{
-        flex: 2;
+    .aside h1 {
+        align-self: flex-end;
     }
-    
-    
     
     .aside p {
         margin: 20px 80px;
         font-size: 1.2em;
         text-align: justify;
         line-height: 1.8;
-    }
-
-    .content-text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 50%;
-        font-size:1.2em;
-        line-height: 1.8;
+        margin-bottom: 60px;
     }
 
     .profile_foto{
-        width: 300px;
-        height: auto;
+        width: auto;
+        height: 250px;
         border-radius: 50%;
+        align-self: center;
     }
     
 `
@@ -74,10 +68,6 @@ const StyledTec = styled.div`
     flex: 2;
     display: flex;
     flex-direction: column;
-
-    h1 {
-
-    }
 
     .tecs {
         display: flex;
@@ -96,8 +86,11 @@ const AboutMe = () => (
         <StyledAboutMe>
             <div className='aside'>
                 <img className='profile_foto' alt='foto' src={foto} />
-                <h1>Who am I?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit amet nisl. Feugiat pretium nibh ipsum consequat nisl vel. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Elementum nibh tellus molestie nunc non blandit massa enim nec. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Auctor elit sed vulputate mi sit amet mauris commodo quis. Quis lectus nulla at volutpat diam ut. Ornare massa eget egestas purus viverra accumsan. A diam maecenas sed enim ut. Consequat mauris nunc congue nisi vitae suscipit tellus. Scelerisque fermentum dui faucibus in ornare quam viverra. Duis ut diam quam nulla porttitor.</p>
+
+                <div>
+                    <h1>Who am I?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit amet nisl. Feugiat pretium nibh ipsum consequat nisl vel. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Elementum nibh tellus molestie nunc non blandit massa enim nec. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Auctor elit sed vulputate mi sit amet mauris commodo quis. Quis lectus nulla at volutpat diam ut. Ornare massa eget egestas purus viverra accumsan. A diam maecenas sed enim ut. Consequat mauris nunc congue nisi vitae suscipit tellus. Scelerisque fermentum dui faucibus in ornare quam viverra. Duis ut diam quam nulla porttitor.</p></div>
+
             </div>
 
             <StyledTec>
@@ -122,28 +115,6 @@ const AboutMe = () => (
                     <ImageTec name="GitLab" src={gitlab} />
                 </div>
             </StyledTec>
-            {/* <div className='content'>
-                    <TiltImage alt='code' src={code} />
-                    <TextContent
-                        title='Code'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed'
-                    />
-                </div>
-                <div className='content'>
-                    <TextContent
-                        title='Design'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed'
-                    />
-                    <TiltImage alt='design' src={design} />
-                </div>
-
-                <div className='content'>
-                    <TiltImage alt='responsive' src={responsive} />
-                    <TextContent
-                        title='Responsive'
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed'
-                    />
-                </div> */}
 
 
         </StyledAboutMe>

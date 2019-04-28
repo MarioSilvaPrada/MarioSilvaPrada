@@ -12,33 +12,48 @@ import code from '../img/web-programming.png';
 import design from '../img/sketch.png';
 import responsive from '../img/responsive.png';
 
-
+const StyledDevelopment = styled.div`
+    width: 80%;
+    margin: 0 auto;
+`
 
 const StyledImages = styled.div`
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 
     img {
-        height: 150px;
+        height: 100px;
         margin: 40px;
     }
 
     .content{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 100%;
         margin-bottom: 50px;
     }
 
+    .content-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size:1.2em;
+        line-height: 1.8;
+        margin: 0 20px;
+        width: 80%;
+    }
+
 `
 
-const Technologies = () => (
+const Development = () => (
     <div>
-        <Element name="technologies" className="element">
-            <Title id='technologies' title='Technologies' description='My technologies' />
+<Element name="development" className="element">
+            <Title id='development' title='Development' description='The way I write code' />
         </Element>
+        <StyledDevelopment>
 
         <StyledImages>
          <div className='content'>
@@ -64,7 +79,9 @@ const Technologies = () => (
                     />
                 </div>
         </StyledImages>
+    </StyledDevelopment>
     </div>
+        
 )
 
-export default Technologies;
+export default Development;

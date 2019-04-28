@@ -6,7 +6,7 @@ const Overlay = styled.div`
     margin: 40px;
 
     img {
-        height: 150px;
+        height: 100px;
         margin-bottom: 20px;
     }
 

@@ -5,7 +5,8 @@ import Header from './components/Header';
 import Greetings from './components/Greetings';
 import AboutMe from './components/AboutMe/AboutMe';
 import Portfolio from './components/Portfolio';
-import Technologies from './components/Technologies';
+import Development from './components/Development';
+import Contact from './components/Contact';
 
 
 
@@ -17,7 +18,8 @@ class App extends Component {
         <Greetings />
         <AboutMe />
         <Portfolio />
-        <Technologies />
+        <Development />
+        <Contact />
       </div>
     );
   }
