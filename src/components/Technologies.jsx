@@ -5,25 +5,33 @@ import { Element } from 'react-scroll';
 
 import Title from './Title';
 
-import express from '../img/techs/express.png';
-import graphql from '../img/techs/graphql.png';
-import jest from '../img/techs/jest.png';
-import mongodb from '../img/techs/mongodb.png';
-import node from '../img/techs/node.png';
-import react from '../img/techs/react.png';
-import redux from '../img/techs/redux.png';
+import TiltImage from './TiltImage';
+import TextContent from './TextContent';
+
+import code from '../img/web-programming.png';
+import design from '../img/sketch.png';
+import responsive from '../img/responsive.png';
+
+
 
 const StyledImages = styled.div`
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
 
     img {
-        width: 250px;
-        margin: 20px;
+        height: 150px;
+        margin: 40px;
     }
+
+    .content{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
 `
 
 const Technologies = () => (
@@ -33,13 +41,28 @@ const Technologies = () => (
         </Element>
 
         <StyledImages>
-            <img alt='express' src={express} />
-            <img alt='graphql' src={graphql} />
-            <img alt='jest' src={jest} />
-            <img alt='mongodb' src={mongodb} />
-            <img alt='node' src={node} />
-            <img alt='react' src={react} />
-            <img alt='redux' src={redux} />
+         <div className='content'>
+                    <TiltImage alt='code' src={code} />
+                    <TextContent
+                        title='Code'
+                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed'
+                    />
+                </div>
+                <div className='content'>
+                    <TextContent
+                        title='Design'
+                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed'
+                    />
+                    <TiltImage alt='design' src={design} />
+                </div>
+
+                <div className='content'>
+                    <TiltImage alt='responsive' src={responsive} />
+                    <TextContent
+                        title='Responsive'
+                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed'
+                    />
+                </div>
         </StyledImages>
     </div>
 )
