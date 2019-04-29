@@ -109,8 +109,8 @@ const Portfolio = () => (
         <StyledPortfolio>
 
             <div className='my-work'>
-                {projects.map(project => {
-                    return <div className="project">
+                {projects.map((project, i) => {
+                    return <div key={i} className="project">
                         <a href={project.img} target="_blank">
                             <img alt={project.title} src={project.img} />
                         </a>
@@ -120,7 +120,7 @@ const Portfolio = () => (
                         <p>{project.description}</p>
                         <a href={project.github} className="github" target="_blank">
                             <span>GitHub</span>
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
 
                     </div>
