@@ -1,19 +1,31 @@
 import React from 'react';
+import styled from 'styled-components';
+
+
+const StyledContactForm = styled.div`
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin: 0 auto;
+    }
+`
 
 
 const ContactForm = () => (
-    <div>
-        <form>
-            <label for="fname">Name</label>
-            {/* <input type="text" id="fname" name="firstname" placeholder="Your name.."> */}
+    <StyledContactForm>
+        <form class="form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSd3CfXUC74QwBziYACiTKQUKl94L7tJq16gMIqrFJgs86JgtQ/formResponse" target="hidden_iframe" onsubmit="submitted=true">
+            <label>Name</label>
+            <input name="entry.43873526" type="text" required />
 
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <label>Email</label>
+            <input name="emailAddress" type="email" required />
 
-                {/* <input type="submit" value="Send Message"> */}
-
+            <label>Message</label>
+            <textarea name="entry.382634451" required></textarea>
+            <input type="submit" value="Send" />
         </form>
-    </div>
-            )
-        
+    </StyledContactForm>
+)
+
 export default ContactForm;
