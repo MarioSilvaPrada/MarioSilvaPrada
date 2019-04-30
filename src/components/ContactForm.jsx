@@ -8,7 +8,7 @@ import { RED, DARK_RED, BLUE, BOX_SHADOW } from '../styles/styles';
 const StyledContactForm = styled.div`
 
     display: flex;
-    width: 50%;
+    width: 800px;
     margin: 0 auto;
     justify-content: center;
     border-radius: 6px;
@@ -19,6 +19,7 @@ const StyledContactForm = styled.div`
     .my-form{
         flex:2;
         margin: 0 60px;
+        align-self: center;
     }
     
     form{
@@ -45,12 +46,12 @@ const StyledContactForm = styled.div`
 
     .name-input, .email-input, .message-input {
         border-radius: 7px;
-        
         height: 30px;
-        font-size: 20px;
+        font-size: 100%;
         padding-left: 40px;
         padding-top: 5px;
         margin-top: 30px;
+        resize: none;
 
     }
 
@@ -70,7 +71,7 @@ const StyledContactForm = styled.div`
         background: ${RED};
         ${BOX_SHADOW}
         color:white;
-        font-size: 1.5em;
+        font-size: 100%;
         font-weight: bold;
     }
 
@@ -95,6 +96,8 @@ const StyledContactForm = styled.div`
         color:#404040;
         font-size: 1.6rem;
     }
+
+
 
     
 `
@@ -125,9 +128,7 @@ const ContactForm = () => (
                 <div className="field-input">
                     <textarea className="message-input" name="entry.382634451" placeholder="Message" required></textarea>
                     <i class="fas fa-envelope-open-text"></i>
-
                 </div>
-
 
                 <p className='submit-message'>Your message was sent successfully!</p>
                 <input className="submit-btn" type="submit" value="Send Message" />

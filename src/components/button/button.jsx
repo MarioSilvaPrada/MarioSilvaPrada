@@ -16,7 +16,6 @@ const StyledButton = styled.button`
     color:white;
     transition: 0.8s;
 
-
     :hover{
         cursor: pointer;
         opacity: 0.7;

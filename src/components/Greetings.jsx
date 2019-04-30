@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Typed from 'react-typed';
 import img from '../img/laptop.jpg';
+import { Link } from 'react-scroll'
+
 
 import { white, RED } from '../styles/styles';
 import StyledButton from './button/button'
@@ -38,7 +40,9 @@ const Greetings = () => (
                 backSpeed={30}
                 loop
             />
-            <StyledButton red>Check my work</StyledButton>
+            <Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={700}>
+                <StyledButton red>Check my work</StyledButton>
+            </Link>
         </ColorLayer>
     </Wrapper>
 )

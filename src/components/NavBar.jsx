@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { RED } from '../styles/styles';
-import { Link } from 'react-scroll'
+import { Link, Element } from 'react-scroll'
 
 
 const StyledNavBar = styled.div`
@@ -27,24 +27,23 @@ const StyledNavBar = styled.div`
 
 
 const NavBar = () => (
-    <StyledNavBar>
-        <Link className="navbar_item" href="#about" activeClass="active" to="about" spy={true} smooth={true} duration={700}>
-            About
-        </Link>
+    <Element name="navbar" className="element">
+        <StyledNavBar>
+            <Link className="navbar_item" href="#about" activeClass="active" to="about" spy={true} smooth={true} duration={700}>
+                About
+            </Link>
+            <Link className="navbar_item" href="#portfolio" activeClass="active" to="portfolio" spy={true} smooth={true} duration={700}>
+                Portfolio
+            </Link>
+            <Link className="navbar_item" href="#development" activeClass="active" to="development" spy={true} smooth={true} duration={700}>
+                Development
+            </Link>
+            <Link className="navbar_item" href="#contact" activeClass="active" to="contact" spy={true} smooth={true} duration={700}>
+                Contact
+            </Link>
+        </StyledNavBar>
+    </Element>
 
-        <Link className="navbar_item" href="#portfolio" activeClass="active" to="portfolio" spy={true} smooth={true} duration={700}>
-            Portfolio
-        </Link>
-
-        <Link className="navbar_item" href="#development" activeClass="active" to="development" spy={true} smooth={true} duration={700}>
-            Development
-        </Link>
-
-        <Link className="navbar_item" href="#contact" activeClass="active" to="contact" spy={true} smooth={true} duration={700}>
-            Contact
-        </Link>
-
-    </StyledNavBar>
 );
 
 export default NavBar;
