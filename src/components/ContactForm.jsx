@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { RED, DARK_RED, BLUE, BOX_SHADOW } from '../styles/styles';
+import { RED, DARK_RED, BLUE, BOX_SHADOW, white } from '../styles/styles';
 
 
 
@@ -10,34 +10,54 @@ const StyledContactForm = styled.div`
     display: flex;
     width: 800px;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 6px;
     color: white;
     background: linear-gradient(90deg, ${RED} 35%, ${BLUE} 20%);
 }
 
     .my-form{
-        flex:2;
-        margin: 0 60px;
+        flex:1;
         align-self: center;
     }
     
     form{
         display: flex;
         flex-direction: column;
-        margin-left: 60px;
-
+        margin-right: 90px;
     }
 
     .my-info{
         flex:1;
-        align-self: stretch;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+
+    .user-submit {
+        margin-top: 10px;
+        display: none;
+        color:green;
+        background: ${white(0.4)}
+    }
+
+    .user-submit .fa-check-circle {
+        position: static;
+        font-size: 2em;
+        color:#85ef47;
     }
 
     .submit-message {
-        display: none;
-        color:green;
+        color: #85ef47;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+
+    .submit-layout {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .fa-envelope {
@@ -47,12 +67,12 @@ const StyledContactForm = styled.div`
     .name-input, .email-input, .message-input {
         border-radius: 7px;
         height: 30px;
-        font-size: 100%;
+        font-size: 1.2em;
         padding-left: 40px;
         padding-top: 5px;
         margin-top: 30px;
         resize: none;
-
+        width: 300px;
     }
 
     .message-input{
@@ -97,13 +117,26 @@ const StyledContactForm = styled.div`
         font-size: 1.6rem;
     }
 
+    .my-info-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-info-content .fa-envelope, .fa-map-marker-alt {
+        position: static;
+        font-size: 1.1em;
+        color: white;
+        margin-right: 8px;
+    }
+
 
 
     
 `
 
 const userSubmit = () => {
-    let p = document.querySelector('.submit-message');
+    let p = document.querySelector('.user-submit');
     p.style.display = "block"
 }
 
@@ -112,7 +145,14 @@ const ContactForm = () => (
     <StyledContactForm>
         <div className="my-info">
             <h3>Let's get in touch!</h3>
-            <p>mariosilvaprada@gmail.com</p>
+            <div className="my-info-content">
+                <i class="fas fa-envelope"></i>
+                <p>mariosilvaprada@gmail.com</p>
+            </div>
+            <div className="my-info-content">
+            <i class="fas fa-map-marker-alt"></i>
+                <p>Lisbon, Portugal</p>
+            </div>
         </div>
         <div className="my-form">
             <form className="form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSd3CfXUC74QwBziYACiTKQUKl94L7tJq16gMIqrFJgs86JgtQ/formResponse" target="hidden_iframe" onSubmit={userSubmit}  >
@@ -130,7 +170,13 @@ const ContactForm = () => (
                     <i class="fas fa-envelope-open-text"></i>
                 </div>
 
+                <div className="user-submit">
+                <div className="submit-layout">
                 <p className='submit-message'>Your message was sent successfully!</p>
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                    
+                </div>
                 <input className="submit-btn" type="submit" value="Send Message" />
             </form>
         </div>
