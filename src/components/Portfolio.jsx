@@ -111,14 +111,14 @@ const Portfolio = () => (
             <div className='my-work'>
                 {projects.map((project, i) => {
                     return <div key={i} className="project">
-                        <a href={project.img} target="_blank">
+                        <a href={project.img} target="_blank" rel="noopener noreferrer">
                             <img alt={project.title} src={project.img} />
                         </a>
-                        <a href={project.img} target="_blank">
+                        <a href={project.img} target="_blank" rel="noopener noreferrer">
                             <h1>{project.title}</h1>
                         </a>
                         <p>{project.description}</p>
-                        <a href={project.github} className="github" target="_blank">
+                        <a href={project.github} className="github" target="_blank" rel="noopener noreferrer">
                             <span>GitHub</span>
                             <i className="fab fa-github"></i>
                         </a>

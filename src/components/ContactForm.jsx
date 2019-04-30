@@ -8,27 +8,29 @@ import { RED, DARK_RED, BLUE, BOX_SHADOW } from '../styles/styles';
 const StyledContactForm = styled.div`
 
     display: flex;
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     justify-content: center;
-    border-radius: 5px;
-    margin: 0 auto;
-    height: auto;
-    align-items: stretch;
+    border-radius: 6px;
     color: white;
+    background: linear-gradient(90deg, ${RED} 35%, ${BLUE} 20%);
+}
 
-    form{
+    .my-form{
         flex:2;
+        margin: 0 60px;
+    }
+    
+    form{
         display: flex;
         flex-direction: column;
-        background-color: ${BLUE}
+        margin-left: 60px;
 
     }
 
     .my-info{
         flex:1;
         align-self: stretch;
-        background-color: ${RED}
         width: 100%;
     }
 
@@ -43,13 +45,18 @@ const StyledContactForm = styled.div`
 
     .name-input, .email-input, .message-input {
         border-radius: 7px;
-        width: 80%;
-        margin: 0 auto;
+        
         height: 30px;
+        font-size: 20px;
+        padding-left: 40px;
+        padding-top: 5px;
+        margin-top: 30px;
+
     }
 
     .message-input{
         height: 80px; 
+        position: relative;
     }
 
 
@@ -75,14 +82,26 @@ const StyledContactForm = styled.div`
 
     }
 
-    label {
-        margin-top: 30px;
+    .field-input{
+        position: relative;
+        display: flex;
+        flex-direction: column;
     }
+
+    .fas{
+        position:absolute;
+        top: 2.4rem;
+        left:0.5rem;
+        color:#404040;
+        font-size: 1.6rem;
+    }
+
+    
 `
 
 const userSubmit = () => {
     let p = document.querySelector('.submit-message');
-    p.style.display="block"
+    p.style.display = "block"
 }
 
 
@@ -91,20 +110,30 @@ const ContactForm = () => (
         <div className="my-info">
             <h3>Let's get in touch!</h3>
             <p>mariosilvaprada@gmail.com</p>
-            <i className="far fa-envelope"></i>
         </div>
-        <form className="form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSd3CfXUC74QwBziYACiTKQUKl94L7tJq16gMIqrFJgs86JgtQ/formResponse"  target="hidden_iframe" onSubmit={userSubmit}  >
-            <label>Name</label>
-            <input className="name-input" name="entry.43873526" type="text" required />
+        <div className="my-form">
+            <form className="form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSd3CfXUC74QwBziYACiTKQUKl94L7tJq16gMIqrFJgs86JgtQ/formResponse" target="hidden_iframe" onSubmit={userSubmit}  >
 
-            <label>Email</label>
-            <input className="email-input" name="emailAddress" type="email" required />
+                <div className="field-input">
+                    <input className="name-input" name="entry.43873526" type="text" placeholder="Name" required />
+                    <i class="fas fa-user"></i>
+                </div>
+                <div className="field-input">
+                    <input className="email-input" name="emailAddress" type="email" placeholder="E-mail" required />
+                    <i class="fas fa-at"></i>
+                </div>
+                <div className="field-input">
+                    <textarea className="message-input" name="entry.382634451" placeholder="Message" required></textarea>
+                    <i class="fas fa-envelope-open-text"></i>
 
-            <label>Message</label>
-            <textarea className="message-input" name="entry.382634451" required></textarea>
-            <p className='submit-message'>Your message was sent successfully!</p>
-            <input className="submit-btn" type="submit" value="Send Message" />
-        </form>
+                </div>
+
+
+                <p className='submit-message'>Your message was sent successfully!</p>
+                <input className="submit-btn" type="submit" value="Send Message" />
+            </form>
+        </div>
+
     </StyledContactForm>
 )
 

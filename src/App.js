@@ -7,6 +7,7 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Portfolio from './components/Portfolio';
 import Development from './components/Development';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 
@@ -20,6 +21,7 @@ class App extends Component {
         <Portfolio />
         <Development />
         <Contact />
+        <Footer />
       </div>
     );
   }
