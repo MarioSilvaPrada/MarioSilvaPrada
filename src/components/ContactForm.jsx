@@ -93,6 +93,7 @@ const StyledContactForm = styled.div`
         color:white;
         font-size: 100%;
         font-weight: bold;
+        transition: 1s;
     }
 
     .submit-btn:hover{
@@ -129,9 +130,6 @@ const StyledContactForm = styled.div`
         color: white;
         margin-right: 8px;
     }
-
-
-
     
 `
 
