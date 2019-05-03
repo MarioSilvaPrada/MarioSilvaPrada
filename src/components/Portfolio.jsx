@@ -50,20 +50,21 @@ const projects = [
 const StyledPortfolio = styled.div`
     display: flex;
     flex-direction: column;
+    max-width: 70rem;
+    margin: 3rem auto;
     
 
     .my-work {
-        display: flex;
-        flex-wrap:wrap;
-        justify-content: space-evenly;
-        width: 90%;
-        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        grid-template-rows: 25rem;
+        gap: 5rem;
+        place-items: center;
     }
 
     .project {
-       width: 350px; 
-       height: 400px;
-       margin: 20px;
+       width: 20rem; 
+       height: 25rem;
        border: 1px solid #d0d0d0;
         ${BOX_SHADOW2}
     }
@@ -79,7 +80,7 @@ const StyledPortfolio = styled.div`
     }
 
     .project h1 {
-        font-size: 25px;
+        font-size: 1.5rem;
     }
 
     .project h1:hover {

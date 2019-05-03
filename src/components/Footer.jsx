@@ -80,6 +80,10 @@ const Footer = () => (
             </span>
         </div>
         <div className="footer-nav">
+            <Link className="navbar_item" href="#about" activeClass="active" to="navbar" spy={true} smooth={true} duration={700}>
+                Home
+            </Link>
+            <span>|</span>
             <Link className="navbar_item" href="#about" activeClass="active" to="about" spy={true} smooth={true} duration={700}>
                 About
             </Link>
@@ -91,10 +95,7 @@ const Footer = () => (
             <Link className="navbar_item" href="#development" activeClass="active" to="development" spy={true} smooth={true} duration={700}>
                 Development
             </Link>
-            <span>|</span>
-            <Link className="navbar_item" href="#contact" activeClass="active" to="contact" spy={true} smooth={true} duration={700}>
-                Contact
-            </Link>
+            
         </div>
         <div className="logos">
             <a href="https://github.com/MarioSilvaPrada" target="blank">

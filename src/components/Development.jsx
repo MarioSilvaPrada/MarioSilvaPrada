@@ -30,7 +30,6 @@ const StyledImages = styled.div`
 
     .content{
         display: flex;
-        justify-content: space-between;
         width: 100%;
         margin-bottom: 50px;
     }
@@ -46,6 +45,20 @@ const StyledImages = styled.div`
         width: 80%;
     }
 
+    @media screen and (max-width: 830px) {
+        .content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .designImg {
+            order: 1;
+        }
+
+        .designText {
+            order: 2;
+        }
+    } 
 `
 
 const Development = () => (
@@ -56,7 +69,7 @@ const Development = () => (
         <StyledDevelopment>
 
         <StyledImages>
-         <div className='content'>
+                <div className='content'>
                     <TiltImage alt='code' src={code} />
                     <TextContent
                         title='Code'
@@ -65,10 +78,12 @@ const Development = () => (
                 </div>
                 <div className='content'>
                     <TextContent
+                        className="designText"
                         title='Design'
                         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed'
                     />
-                    <TiltImage alt='design' src={design} />
+                    <TiltImage alt='design' src={design} className="designImg"/>
+
                 </div>
 
                 <div className='content'>
