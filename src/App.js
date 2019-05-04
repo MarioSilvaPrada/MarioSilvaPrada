@@ -8,7 +8,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Development from './components/Development/Development';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import FloatingButton from './components/button/FloatingButton';
+import FloatingButton from './styles/button/FloatingButton';
 
 
 
