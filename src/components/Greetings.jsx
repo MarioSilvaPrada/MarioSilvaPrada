@@ -12,6 +12,8 @@ const Wrapper = styled.div`
     background-image: url(${img});
     background-size: cover;
     height: 100vh;
+
+    
 `
 
 const ColorLayer = styled.div`
@@ -22,7 +24,7 @@ const ColorLayer = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 4em;
+    font-size: 3rem;
     font-weight: bold;
     color: ${RED};
     

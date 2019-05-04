@@ -8,31 +8,33 @@ import { RED, DARK_RED, BLUE, BOX_SHADOW, white } from '../styles/styles';
 const StyledContactForm = styled.div`
 
     display: flex;
-    width: 800px;
+    width: 50rem;
     margin: 0 auto;
-    justify-content: space-between;
     border-radius: 6px;
     color: white;
-    background: linear-gradient(90deg, ${RED} 35%, ${BLUE} 20%);
+    place-items: stretch center; 
 }
 
-    .my-form{
-        flex:1;
-        align-self: center;
-    }
-    
     form{
         display: flex;
         flex-direction: column;
-        margin-right: 90px;
-    }
+        place-items: center; 
+        }
 
+    .my-form{
+        flex:2;
+        align-self: center;
+        background: ${BLUE};
+        border-radius: 0 1rem 1rem 0;
+
+    }
+    
     .my-info{
         flex:1;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        margin-left: 30px;
+        background: ${RED};
+        border-radius: 1rem 0 0 1rem;
     }
 
     .user-submit {
@@ -60,33 +62,29 @@ const StyledContactForm = styled.div`
         align-items: center;
     }
 
-    .fa-envelope {
-        font-size: 3em;
-    }
-
     .name-input, .email-input, .message-input {
-        border-radius: 7px;
-        height: 30px;
+        border-radius: 0.5rem;
+        border: none;
+        height: 2rem;
         font-size: 1.2em;
-        padding-left: 40px;
-        padding-top: 5px;
-        margin-top: 30px;
+        padding-left: 3rem;
+        padding-top: 0.5rem;
+        margin-top: 2rem;
         resize: none;
-        width: 300px;
     }
 
     .message-input{
-        height: 80px; 
+        height: 5rem; 
         position: relative;
     }
 
 
     .submit-btn {
         align-self: flex-end;
-        border-radius: 7px;
+        border-radius: 0.5rem;
         border: 1px solid ${RED};
         margin: 20px auto;
-        height: 50px;
+        height: 3rem;
         width: 50%;
         background: ${RED};
         ${BOX_SHADOW}
@@ -101,13 +99,13 @@ const StyledContactForm = styled.div`
         background: ${DARK_RED};
         border: 1px solid ${DARK_RED};
 
-
     }
 
     .field-input{
         position: relative;
         display: flex;
         flex-direction: column;
+        width:80%;
     }
 
     .fas{
@@ -115,20 +113,42 @@ const StyledContactForm = styled.div`
         top: 2.4rem;
         left:0.5rem;
         color:#404040;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .my-info-content {
+        align-self: flex-start;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .my-info-content .fa-envelope, .fa-map-marker-alt {
+    .my-info-content .fa-envelope, .my-info-content .fa-map-marker-alt {
         position: static;
         font-size: 1.1em;
         color: white;
         margin-right: 8px;
+        margin-left: 1em;
+    }
+
+    @media screen and (max-width: 950px) {
+        flex-direction: column;
+        place-items: stretch center;
+        width: 30rem;
+
+        .my-info {
+            border-radius:  1rem 1rem 0 0;
+            font-size: 1.2rem; 
+        }
+
+        .my-form {
+            border-radius: 0 0 1rem 1rem;
+            width: 100%;
+        }
+
+        .fas {
+            top: 2.8rem;
+        }
     }
     
 `
@@ -148,7 +168,7 @@ const ContactForm = () => (
                 <p>mariosilvaprada@gmail.com</p>
             </div>
             <div className="my-info-content">
-            <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-map-marker-alt"></i>
                 <p>Lisbon, Portugal</p>
             </div>
         </div>
@@ -169,11 +189,11 @@ const ContactForm = () => (
                 </div>
 
                 <div className="user-submit">
-                <div className="submit-layout">
-                <p className='submit-message'>Your message was sent successfully!</p>
-                    <i class="fas fa-check-circle"></i>
-                </div>
-                    
+                    <div className="submit-layout">
+                        <p className='submit-message'>Your message was sent successfully!</p>
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+
                 </div>
                 <input className="submit-btn" type="submit" value="Send Message" />
             </form>

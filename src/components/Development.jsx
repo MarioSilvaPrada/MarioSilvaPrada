@@ -20,18 +20,19 @@ const StyledDevelopment = styled.div`
 const StyledImages = styled.div`
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    min-width: 20rem;
     margin: 0 auto;
 
     img {
-        height: 100px;
-        margin: 40px;
+        height: 6rem;
+        width: auto;
+        margin: 5rem;
     }
 
     .content{
         display: flex;
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 3rem;
     }
 
     .content-text {
@@ -41,11 +42,11 @@ const StyledImages = styled.div`
         flex-direction: column;
         font-size:1.2em;
         line-height: 1.8;
-        margin: 0 20px;
+        margin: 0 3rem;
         width: 80%;
     }
 
-    @media screen and (max-width: 830px) {
+    @media screen and (max-width: 950px) {
         .content {
             flex-direction: column;
             align-items: center;
@@ -77,13 +78,13 @@ const Development = () => (
                     />
                 </div>
                 <div className='content'>
+                    <TiltImage alt='design' src={design} className="designImg"/>
+
                     <TextContent
                         className="designText"
                         title='Design'
                         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed'
                     />
-                    <TiltImage alt='design' src={design} className="designImg"/>
-
                 </div>
 
                 <div className='content'>

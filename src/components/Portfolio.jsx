@@ -56,7 +56,7 @@ const StyledPortfolio = styled.div`
 
     .my-work {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
         grid-template-rows: 25rem;
         gap: 5rem;
         place-items: center;

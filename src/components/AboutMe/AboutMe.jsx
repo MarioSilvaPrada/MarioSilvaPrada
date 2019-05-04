@@ -61,6 +61,12 @@ const StyledAboutMe = styled.div`
         border-radius: 50%;
         align-self: center;
     }
+
+    @media screen and (max-width: 950px) {
+        .aside {
+            flex-direction: column;
+        }
+    }
     
 `
 

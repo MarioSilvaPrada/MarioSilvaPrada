@@ -18,7 +18,7 @@ const StyledFooter = styled.div`
     flex-direction: column;
 
     .footer-content {
-        width: 400px;
+        width: 100%;
         display: center;
         flex-direction: column;
         justify-content: space-between;
@@ -39,12 +39,16 @@ const StyledFooter = styled.div`
         margin-left: 5px;
     }
 
+    .fab{
+        margin: 0 1.5rem;
+    }
+
     .logos {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         font-size: 2.5em;
         text-decoration: none;
-        margin-top: 20px;
+        margin: 1rem;
         
     }
 
