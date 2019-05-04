@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 import { Element } from 'react-scroll';
 
-import Title from './Title';
+import Title from '../Title';
 
 import TiltImage from './TiltImage';
 import TextContent from './TextContent';
 
-import code from '../img/web-programming.png';
-import design from '../img/sketch.png';
-import responsive from '../img/responsive.png';
+import code from '../../img/web-programming.png';
+import design from '../../img/sketch.png';
+import responsive from '../../img/responsive.png';
 
 const StyledDevelopment = styled.div`
     width: 80%;

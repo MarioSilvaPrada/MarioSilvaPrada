@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { RED, DARK_RED, BLUE, BOX_SHADOW, white } from '../styles/styles';
+import { RED, DARK_RED, BLUE, BOX_SHADOW, white } from '../../styles/styles';
 
 
 

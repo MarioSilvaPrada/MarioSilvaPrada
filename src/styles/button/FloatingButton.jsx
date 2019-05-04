@@ -6,8 +6,8 @@ import { DARK_RED, RED, BOX_SHADOW } from '../../styles/styles';
 
 
 const FloatingButtonStyled = styled.button`
-    height: 60px;
-    width:60px;
+    height: 4rem;
+    width: 4rem;
     border-radius: 100%;
     border: 1px solid ${DARK_RED};
     background: ${DARK_RED};
@@ -24,6 +24,18 @@ const FloatingButtonStyled = styled.button`
     :hover {
         cursor: pointer;
     }
+
+    @media screen and (max-width: 950px) {
+        top: 85%;
+        left: 88%;
+    }
+
+    @media screen and (max-width: 500px) {
+        top: 90%;
+        left: 85%;
+    }
+
+
 `
 
 const FloatingButton = () => (

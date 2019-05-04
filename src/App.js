@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Header from './components/Header';
-import Greetings from './components/Greetings';
+import Header from './components/Header/Header';
+import Greetings from './components/Greetings/Greetings';
 import AboutMe from './components/AboutMe/AboutMe';
-import Portfolio from './components/Portfolio';
-import Development from './components/Development';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Portfolio from './components/Portfolio/Portfolio';
+import Development from './components/Development/Development';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import FloatingButton from './components/button/FloatingButton';
 
 

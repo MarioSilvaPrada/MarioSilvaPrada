@@ -5,7 +5,7 @@ import Title from '../Title';
 
 import { Element } from 'react-scroll';
 
-import ImageTec from '../ImageTec'
+import ImageTec from './ImageTec'
 
 // Profile pic
 import foto from '../../img/foto.jpg';
@@ -34,7 +34,6 @@ import styledComponents from '../../img/techs/styled-components.png';
 const StyledAboutMe = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     width: 90%;
     margin: 0 auto;
@@ -48,16 +47,16 @@ const StyledAboutMe = styled.div`
     }
     
     .aside p {
-        margin: 20px 80px;
+        margin: 3rem 6rem;
         font-size: 1.2em;
         text-align: justify;
         line-height: 1.8;
-        margin-bottom: 60px;
+        margin-bottom: 3rem;
     }
 
     .profile_foto{
         width: auto;
-        height: 250px;
+        height: 16rem;
         border-radius: 50%;
         align-self: center;
     }
@@ -71,13 +70,19 @@ const StyledAboutMe = styled.div`
 `
 
 const StyledTec = styled.div`
-    flex: 2;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    
+
 
     .tecs {
-        display: flex;
+        ${'' /* display: flex;
         flex-wrap: wrap;
+        justify-content: center; */}
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        
     }
     
 `

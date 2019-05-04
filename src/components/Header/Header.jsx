@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BLUE } from '../styles/styles';
+import { BLUE } from '../../styles/styles';
 import { Element } from 'react-scroll';
 
 import NavBar from './NavBar';

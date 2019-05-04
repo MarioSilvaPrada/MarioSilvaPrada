@@ -3,15 +3,17 @@ import styled from 'styled-components';
 
 
 const Overlay = styled.div`
-    margin: 40px;
+    margin: 2rem;
+    
 
     img {
-        height: 100px;
-        margin-bottom: 20px;
+        height: 6rem;
+        margin-bottom: 2rem;
     }
 
     div {
         font-weight: bold;
+        font-size: 1.1rem;
     }
    
 `

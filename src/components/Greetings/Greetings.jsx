@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Typed from 'react-typed';
-import img from '../img/laptop.jpg';
+import img from '../../img/laptop.jpg';
 import { Link } from 'react-scroll'
 
 
-import { white, RED } from '../styles/styles';
-import StyledButton from './button/button'
+import { white, RED } from '../../styles/styles';
+import StyledButton from '../../styles/button/button'
 
 const Wrapper = styled.div`
     background-image: url(${img});

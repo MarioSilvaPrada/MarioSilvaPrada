@@ -1,6 +1,6 @@
 import React from 'react';
 import Tilt from 'react-tilt';
-import { RED } from '../styles/styles';
+import { RED } from '../../styles/styles';
 
 
 const TiltImage = (props) => (

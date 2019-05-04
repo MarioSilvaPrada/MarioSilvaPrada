@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { RED } from '../styles/styles';
+import { RED } from '../../styles/styles';
 import { Link } from 'react-scroll';
 
 

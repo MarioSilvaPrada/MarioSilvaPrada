@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Title from './Title';
+import Title from '../Title';
 import { Element } from 'react-scroll';
 
 import ContactForm from './ContactForm';

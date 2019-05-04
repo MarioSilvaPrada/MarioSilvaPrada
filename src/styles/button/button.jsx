@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { BLUE, RED, BOX_SHADOW } from '../../styles/styles';
+import { BLUE, RED, DARK_RED, BOX_SHADOW } from '../../styles/styles';
 
 const StyledButton = styled.button`
     height: 3.5rem;
@@ -14,11 +14,11 @@ const StyledButton = styled.button`
     font-size: 1.3rem;
     font-weight: bold;
     color:white;
-    transition: 0.8s;
+    transition: 0.7s;
 
     :hover{
         cursor: pointer;
-        opacity: 0.7;
+        ${props => props.red ? `background: ${DARK_RED}` : `background: ${BLUE}`};
     }
 `
 

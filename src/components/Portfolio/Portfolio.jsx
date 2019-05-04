@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Title from './Title';
+import Title from '../Title';
 import { Element } from 'react-scroll';
 
-import { RED, BOX_SHADOW2 } from '../styles/styles';
+import { RED, BOX_SHADOW2 } from '../../styles/styles';
 
 
 
@@ -50,7 +50,7 @@ const projects = [
 const StyledPortfolio = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 70rem;
+    max-width: 90rem;
     margin: 3rem auto;
     
 
@@ -58,7 +58,7 @@ const StyledPortfolio = styled.div`
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
         grid-template-rows: 25rem;
-        gap: 5rem;
+        gap: 3rem;
         place-items: center;
     }
 
