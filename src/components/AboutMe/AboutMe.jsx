@@ -27,6 +27,7 @@ import github from '../../img/techs/github.png';
 import gitlab from '../../img/techs/gitlab.png';
 import sass from '../../img/techs/sass.png';
 import jquery from '../../img/techs/jquery.png';
+import figma from '../../img/techs/figma.png';
 import styledComponents from '../../img/techs/styled-components.png';
 
 
@@ -124,6 +125,7 @@ const AboutMe = () => (
                     <ImageTec name="GIT" src={git} />
                     <ImageTec name="GitHub" src={github} />
                     <ImageTec name="GitLab" src={gitlab} />
+                    <ImageTec name="Figma" src={figma} />
                 </div>
             </StyledTec>
 
