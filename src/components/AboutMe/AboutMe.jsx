@@ -15,6 +15,7 @@ import express from '../../img/techs/express.png';
 import graphql from '../../img/techs/graphql.png';
 import jest from '../../img/techs/jest.png';
 import mongodb from '../../img/techs/mongodb.png';
+import mongoose from '../../img/techs/mongoose.png';
 import node from '../../img/techs/node.png';
 import react from '../../img/techs/react.png';
 import redux from '../../img/techs/redux.png';
@@ -115,6 +116,7 @@ const AboutMe = () => (
                     <ImageTec name="NodeJS" src={node} />
                     <ImageTec name="ExpressJS" src={express} />
                     <ImageTec name="MongoDB" src={mongodb} />
+                    <ImageTec name="Mongoose" src={mongoose} />
                     <ImageTec name="React" src={react} />
                     <ImageTec name="Redux" src={redux} />
                     <ImageTec name="GraphQL" src={graphql} />

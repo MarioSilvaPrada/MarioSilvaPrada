@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
-import { DARK_RED, RED, BOX_SHADOW } from '../../styles/styles';
+import { DARK_RED, BOX_SHADOW } from '../../styles/styles';
 
 
 const FloatingButtonStyled = styled.button`
