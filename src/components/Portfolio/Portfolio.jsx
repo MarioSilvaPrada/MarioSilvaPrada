@@ -10,6 +10,7 @@ import colorGame from '../../img/portfolio/color-game.PNG';
 import robofriends from '../../img/portfolio/robot-friends.PNG';
 import background from '../../img/portfolio/background.PNG';
 import orbit from '../../img/portfolio/orbit.PNG';
+import calculator from '../../img/portfolio/calculator.PNG';
 
 
 
@@ -18,36 +19,36 @@ const projects = [
         img: `${colorGame}`,
         url:'https://colorgameproject1.netlify.com/',
         title: 'Color Game',
-        description: 'awesome website',
+        description: 'Game to guess the color. Built with Vanilla Javascript.',
         github: 'https://github.com/MarioSilvaPrada/color_game'
     },
     {
         img: `${robofriends}`,
         url:'https://robot-friends-project.netlify.com/',
         title: 'Robot Friends',
-        description: 'awesome website2',
+        description: 'A React project built with Tachyons and RoboHash API.',
         github: 'https://github.com/MarioSilvaPrada/robofriends'
     },
     {
         img: `${background}`,
-        url:'',
+        url:'https://background-generator-project.netlify.com/',
         title: 'Background Generator',
-        description: 'awesome website3',
+        description: 'Project to help you choose your background gradient. Built with Vanilla Javascript.',
         github: 'https://github.com/MarioSilvaPrada/background-generator'
     },
     {
         img: `${orbit}`,
-        url:'http://orbitgenerator.s3-website.eu-west-2.amazonaws.com/',
+        url:'https://orbit-animation.netlify.com/',
         title: 'Orbit Animation',
-        description: 'awesome website4',
+        description: 'A simple animation just built with CSS3',
         github: 'https://github.com/MarioSilvaPrada/orbit-generator'
     },
     {
-        img: 'https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-        url:'',
-        title: 'Website5',
-        description: 'awesome website5',
-        github: 'https://github.com/MarioSilvaPrada/color_game'
+        img: `${calculator}`,
+        url:'https://personal-calculator.netlify.com/',
+        title: 'Personal Calculator',
+        description: 'Calculator implemented with React and MathJS library.',
+        github: 'https://github.com/MarioSilvaPrada/personal-calculator'
     },
     {
         img: 'https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -129,7 +130,7 @@ const Portfolio = () => (
                             <img alt={project.title} src={project.img} />
                         </a>
                         <a href={project.url} target="_blank" rel="noopener noreferrer">
-                            <h1>{project.title}</h1>
+                            <h2>{project.title}</h2>
                         </a>
                         <p>{project.description}</p>
                         <a href={project.github} className="github" target="_blank" rel="noopener noreferrer">
