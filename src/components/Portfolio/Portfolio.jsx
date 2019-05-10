@@ -51,11 +51,11 @@ const projects = [
         github: 'https://github.com/MarioSilvaPrada/personal-calculator'
     },
     {
-        img: 'https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-        url:'',
-        title: 'Website6',
+        img: 'https://i.cdn.turner.com/adultswim/big/img/2018/05/07/rick-and-morty.jpg',
+        url:'https://rick-and-morty-wiki.netlify.com/',
+        title: 'Rick and Morty Wikipedia',
         description: 'awesome website6',
-        github: 'https://github.com/MarioSilvaPrada/color_game'
+        github: 'https://github.com/MarioSilvaPrada/rick-and-morty-wiki'
     }
 ];
 
