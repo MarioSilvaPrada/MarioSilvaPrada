@@ -93,22 +93,23 @@ const StyledPortfolio = styled.div`
         border-radius: 2rem 2rem 0 0;
     }
 
-    .project h1 {
-        font-size: 1.5rem;
+    .project h2 {
+        font-size: 1.3rem;
     }
 
-    .project h1:hover {
+    .project h2:hover {
         text-decoration:underline;
     }
 
     .project i {
-        font-size: 1.2rem;
         margin-left: 5px;
     }
 
     .project .github {
         color: #999999;
         transition: 0.5s;
+        font-size: 1.2rem;
+
     }
 
     .project .github:hover {
