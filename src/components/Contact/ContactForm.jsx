@@ -164,11 +164,11 @@ const ContactForm = () => (
         <div className="my-info">
             <h3>Let's get in touch!</h3>
             <div className="my-info-content">
-                <i class="fas fa-envelope"></i>
+                <i className="fas fa-envelope"></i>
                 <p>mariosilvaprada@gmail.com</p>
             </div>
             <div className="my-info-content">
-                <i class="fas fa-map-marker-alt"></i>
+                <i className="fas fa-map-marker-alt"></i>
                 <p>Lisbon, Portugal</p>
             </div>
         </div>
@@ -177,21 +177,21 @@ const ContactForm = () => (
 
                 <div className="field-input">
                     <input className="name-input" name="entry.43873526" type="text" placeholder="Name" required />
-                    <i class="fas fa-user"></i>
+                    <i className="fas fa-user"></i>
                 </div>
                 <div className="field-input">
                     <input className="email-input" name="emailAddress" type="email" placeholder="E-mail" required />
-                    <i class="fas fa-at"></i>
+                    <i className="fas fa-at"></i>
                 </div>
                 <div className="field-input">
                     <textarea className="message-input" name="entry.382634451" placeholder="Message" required></textarea>
-                    <i class="fas fa-envelope-open-text"></i>
+                    <i className="fas fa-envelope-open-text"></i>
                 </div>
 
                 <div className="user-submit">
                     <div className="submit-layout">
                         <p className='submit-message'>Your message was sent successfully!</p>
-                        <i class="fas fa-check-circle"></i>
+                        <i className="fas fa-check-circle"></i>
                     </div>
 
                 </div>

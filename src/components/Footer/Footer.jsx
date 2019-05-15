@@ -103,13 +103,13 @@ const Footer = () => (
         </div>
         <div className="logos">
             <a href="https://github.com/MarioSilvaPrada" target="blank">
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/mario-prada/" target="blank">
-                <i class="fab fa-linkedin-in"></i>
+                <i className="fab fa-linkedin-in"></i>
             </a>
             <a href="https://twitter.com/MarioSilvaPrada" target="blank">
-                <i class="fab fa-twitter"></i>           
+                <i className="fab fa-twitter"></i>           
             </a>
         </div>
     </div>
