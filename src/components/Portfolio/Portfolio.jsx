@@ -11,6 +11,7 @@ import robofriends from '../../img/portfolio/robot-friends.PNG';
 import background from '../../img/portfolio/background.PNG';
 import orbit from '../../img/portfolio/orbit.PNG';
 import calculator from '../../img/portfolio/calculator.PNG';
+import airbnb from '../../img/portfolio/airbnb.PNG';
 
 
 
@@ -56,7 +57,14 @@ const projects = [
         title: 'Rick and Morty Wikipedia',
         description: 'awesome website6',
         github: 'https://github.com/MarioSilvaPrada/rick-and-morty-wiki'
-    }
+    },
+    // {
+    //     img: `${airbnb}`,
+    //     url:'https://rick-and-morty-wiki.netlify.com/',
+    //     title: 'Airbnb Clone',
+    //     description: 'awesome website6',
+    //     github: 'https://github.com/MarioSilvaPrada/airbnb-project'
+    // }
 ];
 
 const StyledPortfolio = styled.div`
