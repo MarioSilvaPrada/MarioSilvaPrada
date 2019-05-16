@@ -55,16 +55,16 @@ const projects = [
         img: 'https://i.cdn.turner.com/adultswim/big/img/2018/05/07/rick-and-morty.jpg',
         url:'https://rick-and-morty-wiki.netlify.com/',
         title: 'Rick and Morty Wikipedia',
-        description: 'awesome website6',
+        description: 'A funny website built with React, GraphQL and Styled Components',
         github: 'https://github.com/MarioSilvaPrada/rick-and-morty-wiki'
     },
-    // {
-    //     img: `${airbnb}`,
-    //     url:'https://rick-and-morty-wiki.netlify.com/',
-    //     title: 'Airbnb Clone',
-    //     description: 'awesome website6',
-    //     github: 'https://github.com/MarioSilvaPrada/airbnb-project'
-    // }
+    {
+        img: `${airbnb}`,
+        url:'https://github.com/MarioSilvaPrada/airbnb-project',
+        title: 'Airbnb Clone',
+        description: 'A Airbnb clone developed with MongoDB, Mongoose, NodeJs and EJS',
+        github: 'https://github.com/MarioSilvaPrada/airbnb-project'
+    }
 ];
 
 const StyledPortfolio = styled.div`
@@ -128,7 +128,7 @@ const StyledPortfolio = styled.div`
 const Portfolio = () => (
     <div>
         <Element name="portfolio" className="element">
-            <Title title='Portfolio' description='My development Projects' />
+            <Title title='Portfolio' description='Always excited to learn, design and build new things.' />
         </Element>
         <StyledPortfolio>
             

@@ -25,6 +25,7 @@ const StyledImages = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   place-items: center;
   gap: 2.5rem;
+  
 
   img {
     height: 6rem;
@@ -45,7 +46,7 @@ const StyledImages = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.8;
     margin: 0 3rem;
     width: 80%;
@@ -59,7 +60,7 @@ const Development = () => (
       <Title
         id="development"
         title="Development"
-        description="The way I write code"
+        description="Development tends to be hard. Here are some things I'm good at to make it more smooth."
       />
     </Element>
     <StyledDevelopment>
@@ -68,7 +69,7 @@ const Development = () => (
           <TiltImage alt="code" src={code} />
           <TextContent
             title="Code"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed"
+            description="I enjoy hand coding things from scratch using clean, simple and maintainable code that is easy to read."
           />
         </div>
         <div className="content">
@@ -77,7 +78,7 @@ const Development = () => (
           <TextContent
             className="designText"
             title="Design"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed"
+            description="My focus is to craft beautiful designed websites, and as with my code, I value simple and clean design patterns."
           />
         </div>
 
@@ -85,14 +86,14 @@ const Development = () => (
           <TiltImage alt="responsive" src={responsive} />
           <TextContent
             title="Responsive"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed"
+            description="My projects will work and look good on any device, no matter the size of the screen."
           />
         </div>
         <div className="content">
-          <TiltImage alt="update" src={idea} />
+          <TiltImage alt="problem-solving" src={idea} />
           <TextContent
-            title="Learning"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed"
+            title="Problem Solving"
+            description="Always break problems into steps, which allows me to organise my projects, in order to get best results."
           />
         </div>
       </StyledImages>

@@ -33,14 +33,14 @@ const StyledNavBar = styled.div`
 
 const NavBar = () => (
         <StyledNavBar>
+            <Link className="navbar_item" href="#about" activeClass="active" to="about" spy={true} smooth={true} duration={700}>
+                About
+            </Link>
             <Link className="navbar_item" href="#development" activeClass="active" to="development" spy={true} smooth={true} duration={700}>
                 Development
             </Link>
             <Link className="navbar_item" href="#portfolio" activeClass="active" to="portfolio" spy={true} smooth={true} duration={700}>
                 Portfolio
-            </Link>
-            <Link className="navbar_item" href="#about" activeClass="active" to="about" spy={true} smooth={true} duration={700}>
-                About
             </Link>
             <Link className="navbar_item" href="#contact" activeClass="active" to="contact" spy={true} smooth={true} duration={700}>
                 Contact

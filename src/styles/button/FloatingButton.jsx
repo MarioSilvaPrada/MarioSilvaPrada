@@ -43,7 +43,7 @@ const FloatingButton = () => (
     <FloatingButtonStyled className="top-btn">
 
         <Link activeClass="active" to="navbar" spy={true} smooth={true} duration={700}>
-            <i class="fas fa-chevron-up"></i>
+            <i className="fas fa-chevron-up"></i>
         </Link>
 
     </FloatingButtonStyled>

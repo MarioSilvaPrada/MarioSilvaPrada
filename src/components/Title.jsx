@@ -15,12 +15,13 @@ const StyledTitle = styled.div`
     margin-bottom: 3rem;
 
     h1 {
-        font-size: 2em;
+        font-size: 3rem;
         margin-bottom: 0;
     }
 
     p {
         font-size: 1.5em;
+        color: ${white(0.8)};
     }
 `;
 

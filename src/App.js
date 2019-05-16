@@ -41,9 +41,9 @@ class App extends Component {
         {floatbtn}
         <Header />
         <Greetings />
+        <AboutMe />
         <Development />
         <Portfolio />
-        <AboutMe />
         <Contact />
         <Footer />
       </div>
