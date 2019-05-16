@@ -162,7 +162,7 @@ const userSubmit = () => {
 const ContactForm = () => (
     <StyledContactForm>
         <div className="my-info">
-            <h3>Let's get in touch!</h3>
+            <h3>Get in touch!</h3>
             <div className="my-info-content">
                 <i className="fas fa-envelope"></i>
                 <p>mariosilvaprada@gmail.com</p>

@@ -9,7 +9,7 @@ import ContactForm from './ContactForm';
 const Contact = () => (
     <div>
         <Element name="contact" className="element">
-            <Title id='contact' title={'Contact'} description={'Lets work together'} />
+            <Title id='contact' title={'Contact'} description={'Let\'s work together'} />
         </Element>
         <ContactForm />
     </div>
