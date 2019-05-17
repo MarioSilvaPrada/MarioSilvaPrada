@@ -60,7 +60,7 @@ const Development = () => (
       <Title
         id="development"
         title="Development"
-        description="Development tends to be hard. Here are some things I'm good at to make it more smooth."
+        description="Development tends to be hard. Here are some things I'm good at to make it smoother."
       />
     </Element>
     <StyledDevelopment>
