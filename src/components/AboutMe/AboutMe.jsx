@@ -48,7 +48,7 @@ const StyledAboutMe = styled.div`
 
   .aside p {
     margin: 3rem 6rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: justify;
     line-height: 2rem;
     margin-bottom: 3rem;
@@ -74,9 +74,6 @@ const StyledTec = styled.div`
   width: 100%;
 
   .tecs {
-    ${"" /* display: flex;
-        flex-wrap: wrap;
-        justify-content: center; */}
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   }
@@ -102,8 +99,8 @@ const AboutMe = () => (
             Hello, my name is Mário Prada, live in Portugal and I'm a front-end
             developer. In 2017 write my first line of code and since than I
             never stop learning. Always excited to learn new tecnologies and
-            build new things with them. Because I have a background in Management,
-            it helps me planning, organise and keeping things simple. And
+            build new things with them. With my background in Management,
+            I'm good at planning, organise and keeping things simple. And
             because I have an entrepreneur side, I like to search for the best
             solution in order to present well-structured and complete
             deliverables. In my spare time I'm usually playing guitar, watching
