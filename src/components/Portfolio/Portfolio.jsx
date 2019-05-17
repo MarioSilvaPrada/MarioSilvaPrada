@@ -12,6 +12,7 @@ import background from '../../img/portfolio/background.PNG';
 import orbit from '../../img/portfolio/orbit.PNG';
 import calculator from '../../img/portfolio/calculator.PNG';
 import airbnb from '../../img/portfolio/airbnb.PNG';
+import portfolio from '../../img/portfolio/portfolio.PNG';
 
 
 
@@ -62,8 +63,15 @@ const projects = [
         img: `${airbnb}`,
         url:'https://github.com/MarioSilvaPrada/airbnb-project',
         title: 'Airbnb Clone',
-        description: 'A Airbnb clone developed with MongoDB, Mongoose, NodeJs and EJS',
+        description: 'A Airbnb clone developed with MongoDB, Mongoose, NodeJs and EJS.',
         github: 'https://github.com/MarioSilvaPrada/airbnb-project'
+    },
+    {
+        img: `${portfolio}`,
+        url:'https://mariosilvaprada.com',
+        title: 'My Portfolio',
+        description: 'Built this site so I can share my skills and projects. Developed with React and deployed in AWS.',
+        github: 'https://github.com/MarioSilvaPrada/my-portfolio'
     }
 ];
 
