@@ -36,7 +36,8 @@ const StyledAboutMe = styled.div`
   flex-direction: column;
   align-items: center;
   width: 90%;
-  margin: 0 auto;
+  margin: 3rem   auto;
+
 
   .aside {
     display: flex;
@@ -52,6 +53,10 @@ const StyledAboutMe = styled.div`
     text-align: justify;
     line-height: 2rem;
     margin-bottom: 3rem;
+  }
+
+  .aside cite {
+    font-size: 1.1rem;
   }
 
   .profile_foto {
@@ -106,6 +111,7 @@ const AboutMe = () => (
             deliverables. In my spare time I'm usually playing guitar, watching
             movies or having fun with family and friends.
           </p>
+          <cite>"Live as if you were to die tomorrow. Learn as if you were to live forever" - Mahatma Gandhi</cite>
         </div>
       </div>
 
