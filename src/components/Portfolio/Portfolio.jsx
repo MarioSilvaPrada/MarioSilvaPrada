@@ -14,7 +14,6 @@ const StyledPortfolio = styled.div`
     max-width: 90rem;
     margin: 3rem auto;
     
-
     .my-work {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));

@@ -12,7 +12,9 @@ const StyledContactForm = styled.div`
     margin: 0 auto;
     border-radius: 6px;
     color: white;
-    place-items: stretch center; 
+    ${'' /* place-items: stretch center;  */}
+    justify-content: center;
+    align-items: stretch;
 }
 
     form{

@@ -22,10 +22,9 @@ const StyledImages = styled.div`
   min-width: 20rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(31rem, 1fr));
   place-items: center;
   gap: 2.5rem;
-  
 
   img {
     height: 6rem;
@@ -51,7 +50,6 @@ const StyledImages = styled.div`
     margin: 0 3rem;
     width: 80%;
   }
-
 `;
 
 const Development = () => (
@@ -60,7 +58,7 @@ const Development = () => (
       <Title
         id="development"
         title="Development"
-        description="Development tends to be hard. Here are some things I'm good at to make it smoother."
+        description="Development tends to be hard. Here are some things I'm good at, to make it smoother."
       />
     </Element>
     <StyledDevelopment>
@@ -71,8 +69,7 @@ const Development = () => (
             title="Code"
             description="I enjoy hand coding things from scratch using clean, simple and maintainable code that is easy to read."
           />
-        </div>
-        <div className="content">
+        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <div className="content">
           <TiltImage alt="design" src={design} className="designImg" />
 
           <TextContent
@@ -81,7 +78,6 @@ const Development = () => (
             description="My focus is to craft beautiful designed websites, and as with my code, I value simple and clean design patterns."
           />
         </div>
-
         <div className="content">
           <TiltImage alt="responsive" src={responsive} />
           <TextContent

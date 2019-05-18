@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 
 const StyledNavBar = styled.div`
     display: flex;
-    place-items: stretch;
+    justify-content: center;
     margin-right: 2rem;
     font-size: 1rem;
     
@@ -16,7 +16,7 @@ const StyledNavBar = styled.div`
         transition: 0.5s;
         color: white;
         display: flex;
-        place-items: center;
+        align-items: center;
         padding: 0 2rem;
     }
 
