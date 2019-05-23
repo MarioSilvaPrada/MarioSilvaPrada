@@ -89,7 +89,7 @@ const Development = () => (
           <TiltImage alt="problem-solving" src={idea} />
           <TextContent
             title="Problem Solving"
-            description="Always break problems into steps, which allows me to organise my projects, in order to get best results."
+            description="Always break problems into steps, which allows me to organize my projects, in order to get best results."
           />
         </div>
       </StyledImages>
