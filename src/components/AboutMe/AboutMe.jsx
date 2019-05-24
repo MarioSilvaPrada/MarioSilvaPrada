@@ -103,7 +103,7 @@ const AboutMe = () => (
           <p>
             Hello, my name is Mário Prada, live in Portugal and I'm a front-end
             developer. In 2017 write my first line of code and since then I
-            never stop learning. Always excited to learn new tecnologies and
+            never stop learning. Always excited to learn new technologies and
             build new things with them. With my background in Management,
             I'm good at planning, organize and keeping things simple. And
             because I have an entrepreneur side, I like to search for the best
