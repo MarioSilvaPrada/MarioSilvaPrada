@@ -105,7 +105,7 @@ const Footer = () => (
             <a href="https://github.com/MarioSilvaPrada" target="blank">
                 <i className="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/mario-prada/" target="blank">
+            <a href="https://www.linkedin.com/in/MarioSilvaPrada/" target="blank">
                 <i className="fab fa-linkedin-in"></i>
             </a>
             <a href="https://twitter.com/MarioSilvaPrada" target="blank">
