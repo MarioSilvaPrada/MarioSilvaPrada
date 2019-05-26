@@ -12,7 +12,6 @@ const StyledContactForm = styled.div`
     margin: 0 auto;
     border-radius: 6px;
     color: white;
-    ${'' /* place-items: stretch center;  */}
     justify-content: center;
     align-items: stretch;
 }
@@ -20,7 +19,7 @@ const StyledContactForm = styled.div`
     form{
         display: flex;
         flex-direction: column;
-        place-items: center; 
+        align-items: center;
         }
 
     .my-form{
