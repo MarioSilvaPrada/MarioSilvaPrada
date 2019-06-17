@@ -101,11 +101,11 @@ const AboutMe = () => (
         <div>
           <h1>Who am I?</h1>
           <p>
-            Hello, my name is Mário Prada, live in Portugal and I'm a front-end
+            Hello, my name is Mário Prada, I live in Portugal and I'm a front-end
             developer. In 2017 write my first line of code and since then I
-            never stop learning. Always excited to learn new technologies and
+            never stopped learning. Always excited to learn new technologies and
             build new things with them. With my background in Management,
-            I'm good at planning, organize and keeping things simple. And
+            I'm good at planning, organizing and keeping things simple. And
             because I have an entrepreneur side, I like to search for the best
             solution in order to present well-structured and complete
             deliverables. In my spare time I'm usually playing guitar, watching
