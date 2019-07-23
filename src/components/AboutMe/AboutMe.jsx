@@ -90,7 +90,7 @@ const AboutMe = () => (
       <Title
         id="about"
         title={"About Me"}
-        description={'Passionate with "never stop learning" path.'}
+        description={'Passionate with "never stop learning" philosophy.'}
       />
     </Element>
 
@@ -102,13 +102,13 @@ const AboutMe = () => (
           <h1>Who am I?</h1>
           <p>
             Hello, my name is Mário Prada, I live in Portugal and I'm a front-end
-            developer. In 2017 write my first line of code and since then I
-            never stopped learning. Always excited to learn new technologies and
+            developer. In 2017 I wrote my first line of code and since then I
+            never stopped learning. I'm always excited to learn new technologies and
             build new things with them. With my background in Management,
             I'm good at planning, organizing and keeping things simple. And
             because I have an entrepreneur side, I like to search for the best
             solution in order to present well-structured and complete
-            deliverables. In my spare time I'm usually playing guitar, watching
+            products. In my spare time I'm usually playing guitar, watching
             movies or having fun with family and friends.
           </p>
           <cite>"Live as if you were to die tomorrow. Learn as if you were to live forever" - Mahatma Gandhi</cite>

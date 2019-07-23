@@ -67,7 +67,7 @@ const Development = () => (
           <TiltImage alt="code" src={code} />
           <TextContent
             title="Code"
-            description="I enjoy hand coding things from scratch using clean, simple and maintainable code that is easy to read."
+            description="I enjoy coding things from scratch using clean, simple and maintainable code that is easy to read."
           />
         </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <div className="content">
           <TiltImage alt="design" src={design} className="designImg" />
@@ -75,7 +75,7 @@ const Development = () => (
           <TextContent
             className="designText"
             title="Design"
-            description="My focus is to craft beautiful designed websites, and as with my code, I value simple and clean design patterns."
+            description="My focus is to craft beautifully designed websites, and as with my code, I value simple and clean design patterns."
           />
         </div>
         <div className="content">
