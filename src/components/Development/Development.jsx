@@ -49,6 +49,10 @@ const StyledImages = styled.div`
     line-height: 1.8;
     margin: 0 3rem;
     width: 80%;
+
+    p{
+      text-align: left;
+    }
   }
 `;
 
