@@ -16,7 +16,7 @@ const FloatingButtonStyled = styled.button`
   background: ${DARK_RED};
   position: fixed;
   ${BOX_SHADOW}
-  top: 85%;
+  top: 90%;
   left: 92%;
   display: flex;
   justify-content: center;

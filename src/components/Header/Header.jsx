@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { BLUE } from '../../styles/styles';
-import { Element } from 'react-scroll';
-import Developer from '../../img/programming.svg';
-import NavBar from './NavBar';
+import React from "react";
+import styled from "styled-components";
+import { BLUE } from "../../styles/styles";
+import { Element } from "react-scroll";
+import Developer from "../../img/programming.svg";
+import NavBar from "./NavBar";
 
 const StyledHeader = styled.div`
     height: 7rem;
@@ -22,19 +22,18 @@ const StyledHeader = styled.div`
         height: 5rem;   
         justify-content: center;
 
-    img{
-        display: none;
+        img{
+            display: none;
+        }
     }
-    }
-`
+`;
 const Header = () => (
-    <Element name="navbar" className="element">
-        <StyledHeader>
-            <img alt='developer' src={Developer}/>
-            <NavBar />
-        </StyledHeader>
-    </Element>
+  <Element name="navbar" className="element">
+    <StyledHeader>
+      <img alt="developer" src={Developer} />
+      <NavBar />
+    </StyledHeader>
+  </Element>
+);
 
-)
-
-export default Header
+export default Header;

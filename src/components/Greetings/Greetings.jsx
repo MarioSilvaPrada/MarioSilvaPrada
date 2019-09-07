@@ -13,6 +13,9 @@ const Wrapper = styled.div`
     background-size: cover;
     height: calc(100vh - 7rem);
 
+    @media screen and (max-width: 950px) {
+        height: calc(100vh - 5rem)
+    }
     
 `
 
