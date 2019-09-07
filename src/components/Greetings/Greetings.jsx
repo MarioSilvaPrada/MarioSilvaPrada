@@ -11,7 +11,7 @@ import StyledButton from '../../styles/button/button'
 const Wrapper = styled.div`
     background-image: url(${img});
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh - 7rem);
 
     
 `
