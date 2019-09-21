@@ -5,6 +5,9 @@ import orbit from '../../img/portfolio/orbit.PNG';
 import calculator from '../../img/portfolio/calculator.PNG';
 import airbnb from '../../img/portfolio/airbnb.PNG';
 import portfolio from '../../img/portfolio/portfolio.PNG';
+import movies from '../../img/portfolio/movies.png';
+import vueGame from '../../img/portfolio/vue-game.png';
+import event from '../../img/portfolio/event.png';
 
 export const projects = [
     {
@@ -62,5 +65,26 @@ export const projects = [
         title: 'My Portfolio',
         description: 'Built this site so I can share my skills and projects. Developed with React and deployed in AWS.',
         github: 'https://github.com/MarioSilvaPrada/my-portfolio'
+    },
+    {
+        img: `${vueGame}`,
+        url:'https://vue-monsterslayer.netlify.com/',
+        title: 'Monster Slayer Game',
+        description: 'A simple game developed with VueJs. ',
+        github: 'https://github.com/MarioSilvaPrada/vue_game'
+    },
+    {
+        img: `${event}`,
+        url:'https://event-organizer-project.netlify.com/allEvents',
+        title: 'Event Organizer',
+        description: 'Platform where you can check and seletc next events to go. Built with Typescript and ReactJs',
+        github: 'https://github.com/MarioSilvaPrada/MovieAPI_React'
+    },
+    {
+        img: `${movies}`,
+        url:'https://pradamovies.netlify.com/',
+        title: 'Movie Library',
+        description: 'A movie library built with Redux, React and Styled Components. ',
+        github: 'https://github.com/MarioSilvaPrada/MovieAPI_React'
     }
 ];

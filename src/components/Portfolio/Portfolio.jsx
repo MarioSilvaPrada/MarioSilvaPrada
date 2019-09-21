@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Title from "../Title";
 import { Element } from "react-scroll";
-import { RED, BOX_SHADOW2 } from "../../styles/styles";
+import { RED, BOX_SHADOW2 } from "../../styles/styles";   
 import { projects } from "./Projects";
 
 const StyledPortfolio = styled.div`
@@ -17,6 +17,10 @@ const StyledPortfolio = styled.div`
     grid-template-rows: 25rem;
     gap: 2rem;
     place-items: center;
+  }
+
+  .portfolio-description {
+    line-height: 1.5rem;
   }
 
   .project {
@@ -80,7 +84,7 @@ const Portfolio = () => (
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h2>{project.title}</h2>
               </a>
-              <p>{project.description}</p>
+              <p className='portfolio-description'>{project.description}</p>
               <a
                 href={project.github}
                 className="github"
