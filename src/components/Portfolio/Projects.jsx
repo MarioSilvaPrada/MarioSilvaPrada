@@ -77,7 +77,7 @@ export const projects = [
         img: `${event}`,
         url:'https://event-organizer-project.netlify.com/allEvents',
         title: 'Event Organizer',
-        description: 'Platform where you can check and seletc next events to go. Built with Typescript and ReactJs',
+        description: 'Platform where you can check and seletc next events to go. Built with Typescript, ReactJs and MomentJs',
         github: 'https://github.com/MarioSilvaPrada/MovieAPI_React'
     },
     {
