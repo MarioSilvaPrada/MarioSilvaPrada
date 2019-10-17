@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Development from "./components/Development/Development";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Talks from "./components/Talks/Talks";
 import FloatingButton from "./styles/button/FloatingButton";
 
 class App extends Component {
@@ -40,6 +41,7 @@ class App extends Component {
         <AboutMe />
         <Development />
         <Portfolio />
+        <Talks />
         <Contact />
         <Footer />
       </div>

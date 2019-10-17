@@ -42,6 +42,9 @@ const NavBar = () => (
             <Link className="navbar_item" href="#portfolio" activeClass="active" to="portfolio" spy={true} smooth={true} duration={700}>
                 Portfolio
             </Link>
+            <Link className="navbar_item" href="#talks" activeClass="active" to="talks" spy={true} smooth={true} duration={700}>
+                Talks
+            </Link>
             <Link className="navbar_item" href="#contact" activeClass="active" to="contact" spy={true} smooth={true} duration={700}>
                 Contact
             </Link>

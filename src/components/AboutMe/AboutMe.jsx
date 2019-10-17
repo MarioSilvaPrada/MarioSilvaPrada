@@ -30,6 +30,8 @@ import sass from "../../img/techs/sass.png";
 import jquery from "../../img/techs/jquery.png";
 import figma from "../../img/techs/figma.png";
 import styledComponents from "../../img/techs/styled-components.png";
+import typescript from "../../img/techs/ts.png";
+import vue from "../../img/techs/vue.png";
 
 const StyledAboutMe = styled.div`
   display: flex;
@@ -126,9 +128,12 @@ const AboutMe = () => (
           <ImageTec name="ExpressJS" src={express} />
           <ImageTec name="MongoDB" src={mongodb} />
           <ImageTec name="Mongoose" src={mongoose} />
+          <ImageTec name="Vue" src={vue} />
           <ImageTec name="React" src={react} />
+          <ImageTec name="React Native" src={react} />
           <ImageTec name="Redux" src={redux} />
           <ImageTec name="GraphQL" src={graphql} />
+          <ImageTec name="TypeScript" src={typescript} />
           <ImageTec name="Jest" src={jest} />
           <ImageTec name="SASS" src={sass} />
           <ImageTec name="Styled-Components" src={styledComponents} />

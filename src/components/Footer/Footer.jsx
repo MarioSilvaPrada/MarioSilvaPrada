@@ -96,6 +96,10 @@ const Footer = () => (
                 Portfolio
             </Link>
             <span>|</span>
+            <Link className="navbar_item" href="#talks" activeClass="active" to="talks" spy={true} smooth={true} duration={700}>
+                Talks
+            </Link>
+            <span>|</span>
             <Link className="navbar_item" href="#development" activeClass="active" to="development" spy={true} smooth={true} duration={700}>
                 Development
             </Link>
