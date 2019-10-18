@@ -198,18 +198,18 @@ const Talks = () => (
         {talks.map(
           (talk, i) =>
             i % 2 === 0 && (
-              <BoardLeft className='left'>
+              <BoardLeft key={i} className='left'>
                 <div className='board__header'>
                   <span />
                   <p>{talk.title}</p>
                 </div>
                 <div className='data-event'>
                   <div className='organization'>{talk.organization}</div>
-                  <a className='link-event' href={talk.url} target='_blank'>
+                  <a className='link-event' href={talk.url} target='_blank' rel="noopener noreferrer">
                     Link to event
                   </a>
                 </div>
-                <span class='circle'>
+                <span className='circle'>
                   <p>{talk.month}</p>
                   <p>{talk.year}</p>
                 </span>
@@ -221,18 +221,18 @@ const Talks = () => (
         {talks.map(
           (talk, i) =>
             !(i % 2 === 0) && (
-              <BoardRight>
+              <BoardRight key={i}>
                 <div className='board__header'>
                   <span />
                   <p>{talk.title}</p>
                 </div>
                 <div className='data-event'>
                   <div className='organization'>{talk.organization}</div>
-                  <a className='link-event' href={talk.url} target='_blank'>
+                  <a className='link-event' href={talk.url} target='_blank' rel="noopener noreferrer">
                     Link to event
                   </a>
                 </div>
-                <span class='circle'>
+                <span className='circle'>
                   <p>{talk.month}</p>
                   <p>{talk.year}</p>
                 </span>
