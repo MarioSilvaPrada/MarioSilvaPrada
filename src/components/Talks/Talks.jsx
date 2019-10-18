@@ -190,7 +190,7 @@ const Talks = () => (
         <Title
           id='talks'
           title={'Talks'}
-          description={'Best way to improve yourself is to share your knowledge'}
+          description={'Because the best way to improve yourself, is to share your knowledge'}
         />
     </Element>
     <Wrapper>
