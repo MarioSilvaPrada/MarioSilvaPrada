@@ -47,6 +47,15 @@ const BoardLeft = styled.div`
   border-radius: 0 0 2rem 2rem;
   position: relative;
 
+  @media(max-width: 900px) {
+    width: 12rem;
+
+    p, .data-event {
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+  }
+
   .circle {
     width: 5rem;
     height: 5rem;
@@ -120,6 +129,15 @@ const BoardRight = styled.div`
   border-radius: 0 0 2rem 2rem;
   position: relative;
 
+  @media(max-width: 900px) {
+    width: 12rem;
+
+    p, .data-event {
+      font-size: 1rem;
+      padding: 0 1rem;
+
+    }
+  }
   .circle {
     width: 5rem;
     height: 5rem;
@@ -173,7 +191,7 @@ const BoardRight = styled.div`
     color: white;
 
     .organization {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     .link-event {
@@ -182,6 +200,8 @@ const BoardRight = styled.div`
       font-weight: bold;
     }
   }
+
+ 
 `;
 
 const Talks = () => (
