@@ -47,6 +47,14 @@ const BoardLeft = styled.div`
   border-radius: 0 0 2rem 2rem;
   position: relative;
 
+  @media(max-width: 900px) {
+    width: 12rem;
+
+    p, .data-event {
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+  }
 
   .circle {
     width: 5rem;
@@ -121,6 +129,15 @@ const BoardRight = styled.div`
   border-radius: 0 0 2rem 2rem;
   position: relative;
 
+  @media(max-width: 900px) {
+    width: 12rem;
+
+    p, .data-event {
+      font-size: 1rem;
+      padding: 0 1rem;
+
+    }
+  }
   .circle {
     width: 5rem;
     height: 5rem;
@@ -174,7 +191,7 @@ const BoardRight = styled.div`
     color: white;
 
     .organization {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     .link-event {
@@ -183,6 +200,8 @@ const BoardRight = styled.div`
       font-weight: bold;
     }
   }
+
+ 
 `;
 
 const Talks = () => (
@@ -191,7 +210,7 @@ const Talks = () => (
         <Title
           id='talks'
           title={'Talks'}
-          description={'Best way to improve yourself is to share your knowledge'}
+          description={'Because the best way to improve yourself, is to share your knowledge'}
         />
     </Element>
     <Wrapper>
@@ -206,7 +225,7 @@ const Talks = () => (
                 </div>
                 <div className='data-event'>
                   <div className='organization'>{talk.organization}</div>
-                  <a className='link-event' href={talk.url} target='_blank'>
+                  <a className='link-event' href={talk.url} target='_blank' rel="noopener noreferrer">
                     Link to event
                   </a>
                 </div>
@@ -229,7 +248,7 @@ const Talks = () => (
                 </div>
                 <div className='data-event'>
                   <div className='organization'>{talk.organization}</div>
-                  <a className='link-event' href={talk.url} target='_blank'>
+                  <a className='link-event' href={talk.url} target='_blank' rel="noopener noreferrer">
                     Link to event
                   </a>
                 </div>
