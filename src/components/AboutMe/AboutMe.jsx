@@ -8,7 +8,7 @@ import { Element } from "react-scroll";
 import ImageTec from "./ImageTec";
 
 // Profile pic
-import foto from "../../img/foto.jpg";
+import foto from "../../img/foto2.jpeg";
 
 // PNGs
 import express from "../../img/techs/express.png";
