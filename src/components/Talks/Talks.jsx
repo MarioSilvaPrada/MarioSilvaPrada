@@ -42,7 +42,7 @@ const BoardLeft = styled.div`
   width: 20rem;
   height: 10rem;
   background: ${RED};
-  margin-bottom: 20rem;
+  margin-bottom: 17rem;
   margin-right: 5rem;
   border-radius: 0 0 2rem 2rem;
   position: relative;

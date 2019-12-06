@@ -20,6 +20,13 @@ const talks = [
       month: 'Oct',
       year: 2019,
     },
+    {
+      title: 'Introduction to React',
+      organization: 'Wild Code School',
+      url: 'https://www.eventbrite.co.uk/e/introduction-to-react-tickets-85225276095',
+      month: 'Jan',
+      year: 2020,
+    },
   ];
 
   export default talks;
