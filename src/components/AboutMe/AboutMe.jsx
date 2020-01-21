@@ -43,6 +43,7 @@ const StyledAboutMe = styled.div`
 
   .aside {
     display: flex;
+    margin-bottom: 3rem;
   }
 
   .aside h1 {
@@ -53,7 +54,7 @@ const StyledAboutMe = styled.div`
     margin: 3rem 6rem;
     font-size: 1.5rem;
     text-align: justify;
-    line-height: 2rem;
+    line-height: 2.5rem;
     margin-bottom: 3rem;
   }
 
@@ -118,7 +119,7 @@ const AboutMe = () => (
       </div>
 
       <StyledTec>
-        <h1>Skills</h1>
+        <h1>My Stack</h1>
         <div className="tecs">
           <ImageTec name="HTML5" src={html} />
           <ImageTec name="CSS3" src={css} />

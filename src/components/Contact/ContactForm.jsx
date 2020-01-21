@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { RED, DARK_RED, BLUE, BOX_SHADOW, white } from '../../styles/styles';
-
-
 
 const StyledContactForm = styled.div`
 
@@ -20,7 +18,12 @@ const StyledContactForm = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+
+
+        textarea:focus, input:focus{
+            outline: none;
         }
+    }
 
     .my-form{
         flex:2;
@@ -40,7 +43,6 @@ const StyledContactForm = styled.div`
 
     .user-submit {
         margin-top: 10px;
-        display: none;
         color:green;
         background: ${white(0.4)}
     }
@@ -152,55 +154,85 @@ const StyledContactForm = styled.div`
         }
     }
     
-`
-
-const userSubmit = () => {
-    let p = document.querySelector('.user-submit');
-    p.style.display = "block"
-}
+`;
 
 
-const ContactForm = () => (
+const ContactForm = () => {
+  const [ isSubmit, setIsSubmit ] = useState(false);
+
+  const onSubmit = () => {
+    setIsSubmit(true);
+    setTimeout(() => {
+        setIsSubmit(false)
+    }, 3500)
+  }
+
+  return (
     <StyledContactForm>
-        <div className="my-info">
-            <h3>Get in touch!</h3>
-            <div className="my-info-content">
-                <i className="fas fa-envelope"></i>
-                <p>mariosilvaprada@gmail.com</p>
-            </div>
-            <div className="my-info-content">
-                <i className="fas fa-map-marker-alt"></i>
-                <p>Lisbon, Portugal</p>
-            </div>
+      <div className='my-info'>
+        <h3>Get in touch!</h3>
+        <div className='my-info-content'>
+          <i className='fas fa-envelope' />
+          <p>mariosilvaprada@gmail.com</p>
         </div>
-        <div className="my-form">
-            <form className="form" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSd3CfXUC74QwBziYACiTKQUKl94L7tJq16gMIqrFJgs86JgtQ/formResponse" target="hidden_iframe" onSubmit={userSubmit}  >
-
-                <div className="field-input">
-                    <input className="name-input" name="entry.43873526" type="text" placeholder="Name" required />
-                    <i className="fas fa-user"></i>
-                </div>
-                <div className="field-input">
-                    <input className="email-input" name="emailAddress" type="email" placeholder="E-mail" required />
-                    <i className="fas fa-at"></i>
-                </div>
-                <div className="field-input">
-                    <textarea className="message-input" name="entry.382634451" placeholder="Message" required></textarea>
-                    <i className="fas fa-envelope-open-text"></i>
-                </div>
-
-                <div className="user-submit">
-                    <div className="submit-layout">
-                        <p className='submit-message'>Your message was sent successfully!</p>
-                        <i className="fas fa-check-circle"></i>
-                    </div>
-
-                </div>
-                <input className="submit-btn" type="submit" value="Send Message" />
-            </form>
+        <div className='my-info-content'>
+          <i className='fas fa-map-marker-alt' />
+          <p>Lisbon, Portugal</p>
         </div>
+      </div>
+      <div className='my-form'>
+        <form
+          className='form'
+          method='POST'
+          action='https://docs.google.com/forms/d/e/1FAIpQLSd3CfXUC74QwBziYACiTKQUKl94L7tJq16gMIqrFJgs86JgtQ/formResponse'
+          target='hidden_iframe'
+          onSubmit={() => onSubmit()}
+        >
+          <div className='field-input'>
+            <input
+              className='name-input'
+              name='entry.43873526'
+              type='text'
+              placeholder='Name'
+              required
+            />
+            <i className='fas fa-user' />
+          </div>
+          <div className='field-input'>
+            <input
+              className='email-input'
+              name='emailAddress'
+              type='email'
+              placeholder='E-mail'
+              required
 
+            />
+            <i className='fas fa-at' />
+          </div>
+          <div className='field-input'>
+            <textarea
+              className='message-input'
+              name='entry.382634451'
+              placeholder='Message'
+              required
+            />
+            <i className='fas fa-envelope-open-text' />
+          </div>
+
+          {isSubmit && (
+            <div className='user-submit'>
+              <div className='submit-layout'>
+                <p className='submit-message'>Your message was sent successfully!</p>
+                <i className='fas fa-check-circle' />
+              </div>
+            </div>
+          )}
+
+          <input className='submit-btn' type='submit' value='Send Message' />
+        </form>
+      </div>
     </StyledContactForm>
-)
+  );
+};
 
 export default ContactForm;
