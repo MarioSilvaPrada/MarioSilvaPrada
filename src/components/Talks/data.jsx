@@ -23,7 +23,7 @@ const talks = [
     {
       title: 'Introduction to React',
       organization: 'Wild Code School',
-      url: 'https://www.eventbrite.co.uk/e/introduction-to-react-tickets-85225276095',
+      url: 'https://www.meetup.com/WildCodeSchool_Lisboa/events/266995399/',
       month: 'Jan',
       year: 2020,
     },
