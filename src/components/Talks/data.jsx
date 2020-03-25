@@ -27,6 +27,13 @@ const talks = [
       month: 'Jan',
       year: 2020,
     },
+    {
+      title: 'Building mobile applications with React Native',
+      organization: 'Wild Code School',
+      url: 'https://www.meetup.com/pt-BR/WildCodeSchool_Lisboa/events/268603198/',
+      month: 'Apr',
+      year: 2020,
+    },
   ];
 
   export default talks;
