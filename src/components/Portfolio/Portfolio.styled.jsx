@@ -86,3 +86,20 @@ export const Button = styled.button`
 `;
 
 export const appImg = styled.img`width: 30rem;`;
+
+export const Wrapper = styled.div`padding: 3 rem;`;
+
+
+export const Paragraph = styled.p`
+  font-size: 1.1rem;
+  width: 30rem;
+  margin: 1.3rem auto 0;
+  line-height: 2rem;
+  text-align: start;
+`
+
+export const SmallText = styled.p`
+  font-size: .8rem;
+  font-weight: bold;
+  text-align: center;
+`

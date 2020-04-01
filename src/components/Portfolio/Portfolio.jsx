@@ -26,9 +26,9 @@ const Portfolio = () => {
       </S.Buttons>
 
       <S.StyledPortfolio>
-        <div className='my-work'>
-          {isWeb ? (
-            projects.map((project, i) => {
+        {isWeb ? (
+          <div className='my-work'>
+            {projects.map((project, i) => {
               return (
                 <div key={i} className='project'>
                   <a href={project.url} target='_blank' rel='noopener noreferrer'>
@@ -49,16 +49,27 @@ const Portfolio = () => {
                   </a>
                 </div>
               );
-            })
-          ) : (
-            mobile.map((app) => (
-              <div>
-                <h1>{app.title}</h1>
-                <S.appImg alt='img' src={app.img} />
-              </div>
-            ))
-          )}
-        </div>
+            })}
+          </div>
+        ) : (
+          mobile.map((app) => (
+            <S.Wrapper>
+              <h1>{app.title}</h1>
+              <S.appImg alt='img' src={app.img} />
+              <S.Paragraph>
+                An app built both for Android and IOS. The goal of this app is to manage expenses
+                between two people, where both can add expenses (Self or Split), and check the
+                evolution throughout the year.
+                For more informations contact me.
+
+                <S.SmallText>
+                  Stack: <br />
+                  React-Native, Styled Components, Redux, D3.js, MongoDB
+                </S.SmallText>
+              </S.Paragraph>
+            </S.Wrapper>
+          ))
+        )}
       </S.StyledPortfolio>
     </div>
   );
