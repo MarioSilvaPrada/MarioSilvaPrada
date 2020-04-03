@@ -83,7 +83,7 @@ export const projects = [
     title: 'Event Organizer',
     description:
       'Platform where you can check and select next events to join. Built with Typescript, ReactJs and MomentJs',
-    github: 'https://github.com/MarioSilvaPrada/MovieAPI_React',
+    github: 'https://github.com/MarioSilvaPrada/event-organizer',
   },
   {
     img: `${movies}`,
