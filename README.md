@@ -1,5 +1,7 @@
-# My Portfolio
+# Hey, folks! 👋
 
-## Place where I can show my work 
+Welcome to my Github page.
 
-Developed with React and deployed in AWS.
+You can find me in
+
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=MarioSilvaPrada)](https://github.com/anuraghazra/github-readme-stats)
