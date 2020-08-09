@@ -17,3 +17,8 @@ You can find me on [![Twitter][1.2]][1], or on [![LinkedIn][2.2]][2].
 [2]: https://www.linkedin.com/in/mariosilvaprada/
 
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=MarioSilvaPrada)](https://github.com/anuraghazra/github-readme-stats)
+
+
+# 🔧 Technologies & Tools
+
+![](https://img.shields.io/badge/<Code>-<Javascript>-informational?style=flat&logo=<javascript>&logoColor=white&color=2bbc8a)
