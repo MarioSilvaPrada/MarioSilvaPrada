@@ -39,7 +39,7 @@ const Greetings = () => (
             <Typed
                 strings={[
                     `Hi my name is Mário Prada.`,
-                    `I'm a Front-end Developer.`
+                    `I'm a Frontend Developer.`
                 ]}
                 typeSpeed={40}
                 backSpeed={30}
