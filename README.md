@@ -16,7 +16,7 @@
 
 ### 🎯 What I'm Up To
 
-Currently leading the tech charge as **Technology Leader & Entrepreneur** at [CareerHigher](https://www.careerhigher.com) 🚀
+Currently leading the tech charge as **Technology Leader & Entrepreneur** at [CareerHigher](https://www.careerhigher.co/) 🚀
 📍 Remote from Lisbon, building for London and beyond
 
 ### 🛠️ Tech Stack
